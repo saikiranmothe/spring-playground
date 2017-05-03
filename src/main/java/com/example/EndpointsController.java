@@ -3,7 +3,7 @@
  */
 
 
-package com.example.controller;
+package com.example;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +18,7 @@ public class EndpointsController {
     {
         return  "3.141592653589793";
     }
+    
 
 }
 
