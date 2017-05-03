@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EndpointsController {
 
     @GetMapping("/math/pi")
-    public String getPIValue()
+    public String piValue()
     {
         return  "3.141592653589793";
     }
