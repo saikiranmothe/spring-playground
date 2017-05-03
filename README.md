@@ -1,4 +1,4 @@
-# spring-playground
+# Spring-playground
 Unit 1 - Learned how to create and run a spring app
 
 # 
