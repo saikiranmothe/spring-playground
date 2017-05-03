@@ -28,7 +28,6 @@ public class EndpointsControllerTests {
 
     @Test
     public void testpiValue() throws Exception{
-
         RequestBuilder request = MockMvcRequestBuilders.get("/math/pi");
 
         this.mvc.perform(request)
