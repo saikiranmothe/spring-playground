@@ -23,6 +23,11 @@ public class EndPointsController {
         return "3.141592653589793";
     }
 
+    @GetMapping("vehicles?year=1987&doors=2")
+    public String getIndexEndpoint() {
+        return "Sample Query string";
+    }
+
     @GetMapping("/tasks")
     public String getTasks() {
         return "These are tasks";

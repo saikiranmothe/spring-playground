@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 /**
  * Created by saikiranmothe on 5/15/17.
@@ -86,6 +87,13 @@ public class EndPointsControllerTest {
 
     }
 
+    @Test
+    public void testIndexEndpoint() throws Exception {
+        RequestBuilder request = MockMvcRequestBuilders.post("/question");
+        this.mvc.perform(request)
+                .andExpect(status().isOk())
+                .andExpect(content().string("Nailed it!"));
 
-
+    }
+    
 }
