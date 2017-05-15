@@ -25,15 +25,6 @@ public class HelloControllerTest {
 
 
     @Test
-    public void testHello() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/");
-        this.mvc.perform(request)
-                .andExpect(status().isOk())
-                .andExpect(content().string("Hello from Spring!"));
-
-    }
-
-    @Test
     public void testSample() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders.get("/test");
         this.mvc.perform(request)
