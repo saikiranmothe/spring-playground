@@ -95,5 +95,5 @@ public class EndPointsControllerTest {
                 .andExpect(content().string("Nailed it!"));
 
     }
-    
+
 }
